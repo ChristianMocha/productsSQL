@@ -1,0 +1,55 @@
+<br><br>
+<div class="title text-center">Agregar Producto</div>
+<hr>
+<br>
+
+<div class="row ">
+    <div class="col-sm-6 col-6 mt-5 mt-sm-0 ">
+
+        <!-- Name input -->
+        <label for="basic-url" class="form-label">Nombre del producto</label>
+        <div class="form-outline mb-4">
+            <input placeholder="Nombre del producto" type="text" class="form-control" [(ngModel)]="product.product_name"/>
+        </div>
+    </div>
+    
+</div>
+
+<div class="row ">
+    <div class="col-sm-6 col-6 mt-5 mt-sm-0 ">
+
+        <!-- Name input -->
+        <label for="basic-url" class="form-label">Imagen del producto</label>
+        <div class="form-outline mb-4">
+            <input placeholder="Url" type="text" class="form-control" [(ngModel)]="product.image"/>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<div class="row">
+    <div class="col-sm-6 col-6 mt-5 mt-sm-0 ">
+
+        <!-- Name input -->
+        <label for="basic-url" class="form-label">Precio</label>
+        <div class="form-outline mb-4">
+            <input placeholder="Precio $" type="text" class="form-control" [(ngModel)]="product.price"/>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-6 mt-5 mt-sm-0 ">
+
+        <!-- Name input -->
+        <label for="basic-url" class="form-label">Stock</label>
+        <div class="form-outline mb-4">
+            <input placeholder="Stock" type="text" class="form-control" [(ngModel)]="product.quantity"/>
+        </div>
+    </div>
+</div>
+
+
+<button type="button" class="btn btn-outline-info  btn-block" (click)="addProducts()">
+    Guardar
+</button>
