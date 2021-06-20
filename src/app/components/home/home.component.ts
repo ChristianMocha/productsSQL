@@ -16,14 +16,12 @@ export class HomeComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    console.log("holaaaaa");
     this.getProducts();
   }
   
   async getProducts(){
     await this.productsService.getProducts().subscribe(
       (res:any) => {
-        console.log(res);
         this.nuevosProducts = res;
       }
     )

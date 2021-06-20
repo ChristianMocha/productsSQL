@@ -21,8 +21,6 @@ export class CreateProductsComponent implements OnInit {
   async addProducts(){
     await this.productService.addProduct(this.product).subscribe(
       res => {
-        console.log(res);
-        console.log('hola');
         this.router.navigate(['/home']);
       }
     )
