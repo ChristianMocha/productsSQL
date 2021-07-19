@@ -11,7 +11,7 @@
   
         <!--Card image-->
         <div class="view overlay">
-          <img class="card-img-top" [src]="products.image | noimage"
+          <img class="card-img-top" [src]="products.img | noimage"
             alt="Card image cap">
           
         </div>
@@ -19,13 +19,8 @@
         <!--Card content-->
         <div class="card-body">
 
-          <h4 class="card-title">{{products.product_name}}</h4>
-          <p class="card-text">{{products.price}} $</p>
-          <p class="card-text">Stock 
-            <span>
-              {{products.quantity}}
-            </span>
-          </p>
+          <h4 class="card-title">{{products.name}}</h4>
+          <p class="card-text">{{products.precio}} $</p>
   
         </div>
   

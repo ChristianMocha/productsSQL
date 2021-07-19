@@ -9,7 +9,7 @@
         <!-- Name input -->
         <label for="basic-url" class="form-label">Nombre del producto</label>
         <div class="form-outline mb-4">
-            <input placeholder="Nombre del producto" type="text" class="form-control" [(ngModel)]="product.product_name"/>
+            <input placeholder="Nombre del producto" type="text" class="form-control" [(ngModel)]="product.name"/>
         </div>
     </div>
     
@@ -21,7 +21,7 @@
         <!-- Name input -->
         <label for="basic-url" class="form-label">Imagen del producto</label>
         <div class="form-outline mb-4">
-            <input placeholder="Url" type="text" class="form-control" [(ngModel)]="product.image"/>
+            <input placeholder="Url" type="text" class="form-control" [(ngModel)]="product.img"/>
         </div>
     </div>
     
@@ -35,18 +35,10 @@
         <!-- Name input -->
         <label for="basic-url" class="form-label">Precio</label>
         <div class="form-outline mb-4">
-            <input placeholder="Precio $" type="text" class="form-control" [(ngModel)]="product.price"/>
+            <input placeholder="Precio $" type="text" class="form-control" [(ngModel)]="product.precio"/>
         </div>
     </div>
 
-    <div class="col-sm-6 col-6 mt-5 mt-sm-0 ">
-
-        <!-- Name input -->
-        <label for="basic-url" class="form-label">Stock</label>
-        <div class="form-outline mb-4">
-            <input placeholder="Stock" type="text" class="form-control" [(ngModel)]="product.quantity"/>
-        </div>
-    </div>
 </div>
 
 

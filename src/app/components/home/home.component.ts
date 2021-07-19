@@ -23,6 +23,7 @@ export class HomeComponent implements OnInit {
     await this.productsService.getProducts().subscribe(
       (res:any) => {
         this.nuevosProducts = res;
+        console.log(this.nuevosProducts);
       }
     )
   }
